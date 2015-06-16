@@ -35,9 +35,10 @@ text {
 
 </style>
 <body>
-<script src="js/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
+// http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/
 var links = [
   {source: "Microsoft", target: "Amazon", type: "licensing"},
   {source: "Microsoft", target: "HTC", type: "licensing"},

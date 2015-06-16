@@ -16,7 +16,7 @@ def main():
     app = QApplication(sys.argv)
     win = QWebView()
 
-    win.setWindowTitle('D3 in Qt Test')
+    win.setWindowTitle('D3d visualziationt')
     layout = QVBoxLayout()
     win.setLayout(layout)
 
