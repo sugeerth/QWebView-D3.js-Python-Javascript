@@ -35,7 +35,15 @@ text {
 
 </style>
 <body>
+  <button onClick="pyObj.showMessage(pyObj.pyVersion +'iiiiiirom WebKit')">Press me</button> 
+  <button onClick="pyObj.showMessage(jsonObj.pp +'as')">Press JSON me</button> 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+<script language="JavaSript">
+document.write('<p> Python'+ pyObj.pVersion + '</p>')
+</script>
+
 <script>
 
 // http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/

@@ -1,5 +1,6 @@
 import sys  
-from PyQt4 import QtCore, QtGui, QtWebKit  
+from PySide import QtCore, QtGui, QtWebKit  
+from PySide.QtCore import QObject, Property
   
 """Html snippet."""  
 html = """ 
@@ -8,7 +9,7 @@ html = """
   <script language="JavaScript"> 
     document.write('<p>Python ' + pyObj.pyVersion + '</p>') 
   </script> 
-  <button onClick="pyObj.showMessage('Hello from WebKit')">Press me</button> 
+  <button onClick="pyObj.showMessage(pyObj.pyVersion +'iiiiiirom WebKit')">Press me</button> 
   </center> 
 </body></html> 
 """  
@@ -16,17 +17,22 @@ html = """
 class StupidClass(QtCore.QObject):  
     """Simple class with one slot and one read-only property."""  
  
-    @QtCore.pyqtSlot(str)  
+    @QtCore.Slot(str)  
     def showMessage(self, msg):  
         """Open a message box and display the specified message."""  
         QtGui.QMessageBox.information(None, "Info", msg)  
+        print "asdas"
   
+    def makeInertison(self,Yo):
+        print Yo
+
+
     def _pyVersion(self):  
         """Return the Python version."""  
         return sys.version  
   
     """Python interpreter version property."""  
-    pyVersion = QtCore.pyqtProperty(str, fget=_pyVersion)  
+    pyVersion = Property(str, fget=_pyVersion)  
   
 def main():  
     app = QtGui.QApplication(sys.argv)  

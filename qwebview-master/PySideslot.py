@@ -28,8 +28,6 @@ class Communicate(QtCore.QObject):
  moreSignals = QtCore.Signal(str)
  sign = QtCore.Signal(int)
 
-
-
 someone = Communicate()
 # connect signal and slot
 someone.speak.connect(saySomeWords)
