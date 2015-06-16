@@ -9,9 +9,9 @@ If you want to test the html file simply copy paste the html code onto the testH
 double click it. 
 
 Features:
-1) Very useful to add d3.js ibraries onto the Python widget. 
-2) A Game Changer for interacting python with web based objects, primarily javascript 
-3) Great addition to the libraries
+1) Very useful to add d3.js ibraries onto the Python widget. \n  
+2) A Game Changer for interacting python with web based objects, primarily javascript \n
+3) Great addition to the libraries\n
 
 
 
