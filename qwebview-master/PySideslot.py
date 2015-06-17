@@ -31,7 +31,6 @@ class Communicate(QtCore.QObject):
 someone = Communicate()
 # connect signal and slot
 someone.speak.connect(saySomeWords)
-someone.speak.connect(sayThreeWords)
 someone.speak.connect(sayFourWords)
 
 someone.moreSignals.connect(sayFourWords)
